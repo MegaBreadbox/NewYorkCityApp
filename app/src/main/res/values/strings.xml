@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">New York City</string>
+    <string name="manhattan">Manhattan</string>
+    <string name="the_bronx">The Bronx</string>
+    <string name="queens">Queens</string>
+    <string name="brooklyn">Brooklyn</string>
+    <string name="staten_island">Staten Island</string>
+</resources>
