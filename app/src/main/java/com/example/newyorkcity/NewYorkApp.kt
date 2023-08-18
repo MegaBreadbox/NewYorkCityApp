@@ -16,10 +16,18 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+
 import androidx.navigation.compose.rememberNavController
 
 enum class NewYorkScreen(){
     MenuScreen,
+    ManhattanActivities,
+    BronxActivities,
+    BrooklynActivities,
+    QueensActivities,
+    StatenIslandActivities,
+    Description
 
 }
 @OptIn(ExperimentalMaterial3Api::class)
@@ -29,7 +37,9 @@ fun NewYorkApp(
 ) {
     val viewModel: NewYorkViewModel = viewModel()
     val uiState by viewModel.uiState.collectAsState()
-    val navController: NavController = rememberNavController()
+    val navController: NavHostController = rememberNavController()
+
+
     //Compact implementation
 
     Scaffold(
@@ -39,7 +49,21 @@ fun NewYorkApp(
     ) {
         //CompactMenuScreen(uiState.boroughs)
         Column(modifier = Modifier.padding(it)){
-            CompactMenuScreen(uiState.boroughs)
+            //CompactMenuScreen(uiState.boroughs)
+
+            NavHost(
+                navController = navController,
+                startDestination = NewYorkScreen.MenuScreen.name,
+                modifier = Modifier
+            ){
+                composable(route = NewYorkScreen.MenuScreen.name){
+                    CompactMenuScreen(
+                        boroughs = uiState.boroughs,
+                        onClick = {}
+
+                    )
+                }
+            }
         }
     }
 }
