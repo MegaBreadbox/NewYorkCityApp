@@ -9,4 +9,9 @@
     <string name="metropolitan_museum_of_art">Metropolitan Museum of Art</string>
     <string name="central_park">Central Park</string>
     <string name="times_square">Times Square</string>
+    <string name="bronx_zoo">Bronx Zoo</string>
+    <string name="bronx_botanical_garden">Bronx Botanical Garden</string>
+    <string name="universal_hip_hop_museum">Universal Hip Hop Museum</string>
+    <string name="yankee_stadium">Yankee Stadium</string>
+    <string name="coney_island">Coney Island</string>
 </resources>

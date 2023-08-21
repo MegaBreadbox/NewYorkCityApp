@@ -58,9 +58,32 @@ object DataSource {
 
     val bronxActivities = listOf(
         LocationModel(
+            locationImage = R.drawable.yankee_stadium,
+            locationName = R.string.yankee_stadium,
+            navigation = NewYorkScreen.YankeeStadiumDescription.name
+        ),
+        LocationModel(
             locationImage = R.drawable.bronxzoo,
-            locationName = "Bronx Zoo",
-            navigation = NewYorkScreen.
+            locationName = R.string.bronx_zoo,
+            navigation = NewYorkScreen.BronxZooDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.bronx_botanical_garden,
+            locationName = R.string.bronx_botanical_garden,
+            navigation = NewYorkScreen.BronxGardenDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.universal_hip_hop_museum,
+            locationName = R.string.universal_hip_hop_museum,
+            navigation = NewYorkScreen.HipHopMuseumDescription.name
+        )
+    )
+
+    val brooklynActivities = listOf(
+        LocationModel(
+            locationImage = R.drawable.coney_island_2233845_1280,
+            locationName = R.string.coney_island,
+            navigation = NewYorkScreen.ConeyIslandDescription.name
         )
     )
 

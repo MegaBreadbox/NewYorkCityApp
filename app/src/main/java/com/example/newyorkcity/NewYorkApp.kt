@@ -28,14 +28,23 @@ enum class NewYorkScreen(){
     QueensActivities,
     StatenIslandActivities,
 
-    //manhattan activities
+    // Manhattan activities
     EmpireStateBuildingDescription,
     MetroMuseumDescription,
     CentralParkDescription,
     TimesSquareDescription,
 
-    //Bronx activities
+    // Bronx activities
+    BronxZooDescription,
+    BronxGardenDescription,
+    HipHopMuseumDescription,
+    YankeeStadiumDescription,
 
+    // Brooklyn activities
+    ConeyIslandDescription,
+    BrooklynBotanicGardenDescription,
+    ProspectParkDescription,
+    BrooklynMuseumDescription
 
 }
 @OptIn(ExperimentalMaterial3Api::class)
@@ -74,13 +83,14 @@ fun NewYorkApp(
                 composable(route = NewYorkScreen.ManhattanActivities.name) {
                     CompactMenuScreen(
                         boroughs = uiState.manhattanActivities,
-                        onClick = { navController.navigate(it)}
+                        onClick = { navController.navigate(it) }
                     )
                 }
-
                 composable(route = NewYorkScreen.BronxActivities.name) {
                     CompactMenuScreen(
-                        boroughs = uiState.,
+                        boroughs = uiState.bronxActivities,
+                        onClick = { navController.navigate(it) }
+                    )
                 }
 
 
