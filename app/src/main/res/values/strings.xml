@@ -17,4 +17,9 @@
     <string name="prospect_park">Prospect Park</string>
     <string name="brooklyn_botanic_garden">Brooklyn Botanic Garden</string>
     <string name="brooklyn_musuem">Brooklyn Musuem</string>
+    <string name="corona_park">Corona Park</string>
+    <string name="museum_of_the_moving_image">Museum of the Moving Image</string>
+    <string name="citi_field">Citi Field</string>
+    <string name="rockaway_beach">Rockaway Beach</string>
+    <string name="statue_of_liberty">Statue of Liberty</string>
 </resources>

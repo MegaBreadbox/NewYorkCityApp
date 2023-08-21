@@ -7,5 +7,8 @@ data class NewYorkUiState(
     val boroughs: List<LocationModel> = DataSource.locations,
     val manhattanActivities: List<LocationModel> = DataSource.manhattanActivities,
     val bronxActivities: List<LocationModel> = DataSource.bronxActivities,
-    val brooklynActivities: List<LocationModel> = DataSource.brooklynActivities
-)
+    val brooklynActivities: List<LocationModel> = DataSource.brooklynActivities,
+    val queensActivities: List<LocationModel> = DataSource.queensActivities,
+    val statenIslandActivities: List<LocationModel> = DataSource.statenIslandActivities
+
+    )

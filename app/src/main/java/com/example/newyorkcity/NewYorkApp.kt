@@ -13,7 +13,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -44,7 +43,16 @@ enum class NewYorkScreen(){
     ConeyIslandDescription,
     BrooklynBotanicGardenDescription,
     ProspectParkDescription,
-    BrooklynMuseumDescription
+    BrooklynMuseumDescription,
+
+    // Queens activities
+    MuseumOfMovingImageDescription,
+    CitiBaseBallFieldDescription,
+    FlushingMeadowCoronaParkDescription,
+    RockawayBeachDescription,
+
+    //Staten Island
+    StatueOfLibertyDescription
 
 }
 @OptIn(ExperimentalMaterial3Api::class)
@@ -98,7 +106,18 @@ fun NewYorkApp(
                         onClick = { navController.navigate(it) }
                     )
                 }
-
+                composable(route = NewYorkScreen.QueensActivities.name) {
+                    CompactMenuScreen(
+                        boroughs = uiState.queensActivities,
+                        onClick = { navController.navigate(it) }
+                    )
+                }
+                composable(route = NewYorkScreen.StatenIslandActivities.name) {
+                    CompactMenuScreen(
+                        boroughs = uiState.statenIslandActivities,
+                        onClick = { navController.navigate(it) }
+                    )
+                }
             }
         }
     }

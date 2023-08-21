@@ -103,4 +103,35 @@ object DataSource {
 
     )
 
+    val queensActivities = listOf(
+        LocationModel(
+            locationImage = R.drawable.globe_2965480_1280,
+            locationName = R.string.corona_park,
+            navigation = NewYorkScreen.FlushingMeadowCoronaParkDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.citi_baseball_stadium,
+            locationName = R.string.citi_field,
+            navigation = NewYorkScreen.CitiBaseBallFieldDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.museum_of_the_moving_image,
+            locationName = R.string.museum_of_the_moving_image,
+            navigation = NewYorkScreen.MuseumOfMovingImageDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.rockaway_beach_4754134_1280,
+            locationName = R.string.rockaway_beach,
+            navigation = NewYorkScreen.RockawayBeachDescription.name
+        )
+    )
+
+    val statenIslandActivities = listOf(
+        LocationModel(
+            locationImage = R.drawable.america_2328689_1280,
+            locationName = R.string.statue_of_liberty,
+            navigation = NewYorkScreen.StatueOfLibertyDescription.name
+        )
+    )
+
 }
