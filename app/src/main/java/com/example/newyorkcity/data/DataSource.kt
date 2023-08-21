@@ -84,7 +84,23 @@ object DataSource {
             locationImage = R.drawable.coney_island_2233845_1280,
             locationName = R.string.coney_island,
             navigation = NewYorkScreen.ConeyIslandDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.prospect_park,
+            locationName = R.string.prospect_park,
+            navigation = NewYorkScreen.ProspectParkDescription.name
+        ),
+        LocationModel(
+            locationImage = R.drawable.brooklyn_botanic_garden,
+            locationName = R.string.brooklyn_botanic_garden,
+            navigation = NewYorkScreen.BrooklynBotanicGardenDescription.name,
+        ),
+        LocationModel(
+            locationImage = R.drawable.brooklyn_museum,
+            locationName = R.string.brooklyn_musuem,
+            navigation = NewYorkScreen.BrooklynMuseumDescription.name
         )
+
     )
 
 }

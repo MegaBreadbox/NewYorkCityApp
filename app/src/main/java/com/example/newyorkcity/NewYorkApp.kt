@@ -92,7 +92,12 @@ fun NewYorkApp(
                         onClick = { navController.navigate(it) }
                     )
                 }
-
+                composable(route = NewYorkScreen.BrooklynActivities.name) {
+                    CompactMenuScreen(
+                        boroughs = uiState.brooklynActivities,
+                        onClick = { navController.navigate(it) }
+                    )
+                }
 
             }
         }
