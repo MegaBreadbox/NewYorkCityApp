@@ -27,7 +27,15 @@ enum class NewYorkScreen(){
     BrooklynActivities,
     QueensActivities,
     StatenIslandActivities,
-    Description
+
+    //manhattan activities
+    EmpireStateBuildingDescription,
+    MetroMuseumDescription,
+    CentralParkDescription,
+    TimesSquareDescription,
+
+    //Bronx activities
+
 
 }
 @OptIn(ExperimentalMaterial3Api::class)
@@ -46,9 +54,9 @@ fun NewYorkApp(
         topBar = {
             NewYorkTopBar()
         }
-    ) {
+    ) { padding ->
         //CompactMenuScreen(uiState.boroughs)
-        Column(modifier = Modifier.padding(it)){
+        Column(modifier = Modifier.padding(padding)){
             //CompactMenuScreen(uiState.boroughs)
 
             NavHost(
@@ -56,13 +64,26 @@ fun NewYorkApp(
                 startDestination = NewYorkScreen.MenuScreen.name,
                 modifier = Modifier
             ){
-                composable(route = NewYorkScreen.MenuScreen.name){
+                composable(route = NewYorkScreen.MenuScreen.name) {
                     CompactMenuScreen(
                         boroughs = uiState.boroughs,
-                        onClick = {}
+                        onClick = { navController.navigate(it) }
 
                     )
                 }
+                composable(route = NewYorkScreen.ManhattanActivities.name) {
+                    CompactMenuScreen(
+                        boroughs = uiState.manhattanActivities,
+                        onClick = { navController.navigate(it)}
+                    )
+                }
+
+                composable(route = NewYorkScreen.BronxActivities.name) {
+                    CompactMenuScreen(
+                        boroughs = uiState.,
+                }
+
+
             }
         }
     }

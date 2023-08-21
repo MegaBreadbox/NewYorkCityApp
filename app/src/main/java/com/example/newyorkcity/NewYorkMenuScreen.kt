@@ -3,6 +3,8 @@ package com.example.newyorkcity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -17,6 +19,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import com.example.newyorkcity.model.LocationModel
 
 @Composable
@@ -39,8 +42,8 @@ fun BoroughList(
     modifier: Modifier = Modifier
 ){
     LazyColumn {
-        itemsIndexed(boroughs) {  index, borough ->
-            BoroughLayout(location = borough, index = index, onClick = onClick)
+        items(boroughs) {  borough ->
+            BoroughLayout(location = borough, onClick = onClick)
         }
     }
 }
@@ -49,20 +52,19 @@ fun BoroughList(
 fun BoroughLayout(
     location: LocationModel,
     onClick: (String) -> Unit,
-    index: Int,
     modifier: Modifier = Modifier
 ) {
     Card(
         elevation = CardDefaults.cardElevation(dimensionResource(R.dimen.small_padding)),
         modifier = modifier.padding(dimensionResource(R.dimen.medium_padding))
-            .clickable { onClick(NewYorkScreen.values()[index].name)}
+            .clickable { onClick(location.navigation) }
     ){
         Column(
         ) {
             Image(
                 painter = painterResource(location.locationImage),
                 contentDescription = null,
-                //modifier.weight(1F)
+                modifier.fillMaxHeight()
             )
             //Spacer(modifier.weight(1F))
             Text(

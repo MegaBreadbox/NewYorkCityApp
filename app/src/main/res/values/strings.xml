@@ -5,4 +5,8 @@
     <string name="queens">Queens</string>
     <string name="brooklyn">Brooklyn</string>
     <string name="staten_island">Staten Island</string>
+    <string name="empire_state_building">Empire State Building</string>
+    <string name="metropolitan_museum_of_art">Metropolitan Museum of Art</string>
+    <string name="central_park">Central Park</string>
+    <string name="times_square">Times Square</string>
 </resources>
