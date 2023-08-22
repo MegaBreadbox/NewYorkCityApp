@@ -13,6 +13,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -58,11 +59,11 @@ enum class NewYorkScreen(){
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NewYorkApp(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navController: NavHostController = rememberNavController()
 ) {
     val viewModel: NewYorkViewModel = viewModel()
     val uiState by viewModel.uiState.collectAsState()
-    val navController: NavHostController = rememberNavController()
 
 
     //Compact implementation
