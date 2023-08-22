@@ -1,6 +1,5 @@
 package com.example.newyorkcity
 
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -56,6 +55,7 @@ fun BoroughLayout(
 ) {
     Card(
         elevation = CardDefaults.cardElevation(dimensionResource(R.dimen.small_padding)),
+        colors = CardDefaults.cardColors(MaterialTheme.colorScheme.secondaryContainer),
         modifier = modifier
             .padding(dimensionResource(R.dimen.medium_padding))
             .clickable { onClick(location.navigation) }
@@ -72,6 +72,7 @@ fun BoroughLayout(
             //Spacer(modifier.weight(1F))
             Text(
                 text = stringResource(location.locationName),
+                color = MaterialTheme.colorScheme.onSecondaryContainer,
                 style = MaterialTheme.typography.headlineSmall,
                 textAlign = TextAlign.Center,
                 modifier = modifier.padding(start = dimensionResource(R.dimen.medium_padding),

@@ -22,4 +22,5 @@
     <string name="citi_field">Citi Field</string>
     <string name="rockaway_beach">Rockaway Beach</string>
     <string name="statue_of_liberty">Statue of Liberty</string>
+    <string name="back_button">back button</string>
 </resources>
