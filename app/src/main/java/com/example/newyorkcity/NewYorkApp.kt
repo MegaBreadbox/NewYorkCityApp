@@ -47,7 +47,7 @@ enum class NewYorkScreen(@StringRes val topBarTitle: Int){
     YankeeStadiumDescription(topBarTitle = R.string.yankee_stadium),
 
     // Brooklyn activities
-    ConeyIslandDescription(topBarTitle = R.string.coney_island),
+    LunaParkDescription(topBarTitle = R.string.luna_park),
     BrooklynBotanicGardenDescription(topBarTitle = R.string.brooklyn_botanic_garden),
     ProspectParkDescription(topBarTitle = R.string.prospect_park),
     BrooklynMuseumDescription(topBarTitle = R.string.brooklyn_musuem),
@@ -60,8 +60,34 @@ enum class NewYorkScreen(@StringRes val topBarTitle: Int){
 
     //Staten Island activities
     StatueOfLibertyDescription(topBarTitle = R.string.statue_of_liberty)
-
 }
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun NewYorkTopBar(
+    currentScreen: NewYorkScreen,
+    canNavigateBack: Boolean,
+    navigateUp: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    TopAppBar(
+        title = { Text(stringResource(currentScreen.topBarTitle)) },
+        colors = TopAppBarDefaults.mediumTopAppBarColors(
+            containerColor = MaterialTheme.colorScheme.primaryContainer
+        ),
+        modifier = modifier,
+        navigationIcon = {
+            if(canNavigateBack) {
+                IconButton(onClick = navigateUp) {
+                    Icon(
+                        imageVector = Icons.Rounded.ArrowBack,
+                        contentDescription = stringResource(R.string.back_button)
+                    )
+                }
+            }
+        }
+    )
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NewYorkApp(
@@ -133,34 +159,111 @@ fun NewYorkApp(
                         onClick = { navController.navigate(it) }
                     )
                 }
-            }
-        }
-    }
-}
+                // third screen routes
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun NewYorkTopBar(
-    currentScreen: NewYorkScreen,
-    canNavigateBack: Boolean,
-    navigateUp: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    TopAppBar(
-        title = { Text(stringResource(currentScreen.topBarTitle)) },
-        colors = TopAppBarDefaults.mediumTopAppBarColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
-        ),
-        modifier = modifier,
-        navigationIcon = {
-            if(canNavigateBack) {
-                IconButton(onClick = navigateUp) {
-                    Icon(
-                        imageVector = Icons.Rounded.ArrowBack,
-                        contentDescription = stringResource(R.string.back_button)
+                composable(route = NewYorkScreen.EmpireStateBuildingDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.empire_state_building,
+                        textBody = stringResource(R.string.empire_description)
+                    )
+                }
+                composable(route = NewYorkScreen.MetroMuseumDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.metropolitan_museum_of_art_754843_1280,
+                        textBody = stringResource(R.string.met_museum_description)
+                    )
+                }
+                composable(route = NewYorkScreen.CentralParkDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.central_park,
+                        textBody = stringResource(R.string.central_park_description)
+                    )
+                }
+                composable(route = NewYorkScreen.TimesSquareDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.times_square,
+                        textBody = stringResource(R.string.times_square_description)
+                    )
+                }
+                composable(route = NewYorkScreen.YankeeStadiumDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.yankee_stadium,
+                        textBody = stringResource(R.string.yankee_stadium_description)
+                    )
+                }
+                composable(route = NewYorkScreen.BronxZooDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.bronxzoo,
+                        textBody = stringResource(R.string.bronx_zoo_description)
+                    )
+                }
+                composable(route = NewYorkScreen.BronxGardenDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.bronx_botanical_garden,
+                        textBody = stringResource(R.string.bronx_botanical_garden_description)
+                    )
+                }
+                composable(route = NewYorkScreen.HipHopMuseumDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.universal_hip_hop_museum,
+                        textBody = stringResource(R.string.hiphop_museum_description)
+                    )
+                }
+                composable(route = NewYorkScreen.LunaParkDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.coney_island_2233845_1280,
+                        textBody = stringResource(R.string.luna_park_description)
+                    )
+                }
+                composable(route = NewYorkScreen.ProspectParkDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.prospect_park,
+                        textBody = stringResource(R.string.prospect_park_description)
+                    )
+                }
+                composable(route = NewYorkScreen.BrooklynBotanicGardenDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.brooklyn_botanic_garden,
+                        textBody = stringResource(R.string.brooklyn_botanic_garden_description)
+                    )
+                }
+                composable(route = NewYorkScreen.BrooklynMuseumDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.brooklyn_museum,
+                        textBody = stringResource(R.string.brooklyn_museum_description)
+                    )
+                }
+                composable(route = NewYorkScreen.FlushingMeadowCoronaParkDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.globe_2965480_1280,
+                        textBody = stringResource(R.string.corona_park_description)
+                    )
+                }
+                composable(route = NewYorkScreen.CitiBaseBallFieldDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.citi_baseball_stadium,
+                        textBody = stringResource(R.string.citi_field_description)
+                    )
+                }
+                composable(route = NewYorkScreen.MuseumOfMovingImageDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.museum_of_the_moving_image,
+                        textBody = stringResource(R.string.museum_of_the_moving_image_description)
+                    )
+                }
+                composable(route = NewYorkScreen.RockawayBeachDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.rockaway_beach_4754134_1280,
+                        textBody = stringResource(R.string.rockaway_beach_description)
+                    )
+                }
+                composable(route = NewYorkScreen.StatueOfLibertyDescription.name) {
+                    DetailScreen(
+                        image = R.drawable.america_2328689_1280,
+                        textBody = stringResource(R.string.statue_of_liberty_description)
                     )
                 }
             }
         }
-    )
+    }
 }

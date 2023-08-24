@@ -13,14 +13,53 @@
     <string name="bronx_botanical_garden">Bronx Botanical Garden</string>
     <string name="universal_hip_hop_museum">Universal Hip Hop Museum</string>
     <string name="yankee_stadium">Yankee Stadium</string>
-    <string name="coney_island">Coney Island</string>
+    <string name="luna_park">Luna Park</string>
     <string name="prospect_park">Prospect Park</string>
     <string name="brooklyn_botanic_garden">Brooklyn Botanic Garden</string>
     <string name="brooklyn_musuem">Brooklyn Musuem</string>
-    <string name="corona_park">Corona Park</string>
+    <string name="corona_park">Flushing Meadows Corona Park</string>
     <string name="museum_of_the_moving_image">Museum of the Moving Image</string>
     <string name="citi_field">Citi Field</string>
     <string name="rockaway_beach">Rockaway Beach</string>
     <string name="statue_of_liberty">Statue of Liberty</string>
     <string name="back_button">back button</string>
+    <string name="empire_description">\tThe seventh largest building in New York City at a
+        staggering 102 stories. The Empire State Building certainly pops in the Manhattan skyline
+        since it is about 380 meters tall. Purchase tickets and take a tour through the building’s history. Look
+        into what it was like in the 1920s from construction to opening day through panoramic images
+        that have their color restored. Take a simulated ride on an otis elevator which used to take
+        passengers throughout the building which has been created using original parts. Unwind at th
+        e top and marvel at the city through viewfinders at the top floor of the Empire State
+        Building.</string>
+    <string name="met_museum_description">\tAdmire the artistry of exhibits featuring evergreen pai
+        ntings by Van Gogh, which of course will include ‘The Starry Night’. These exhibits will be
+        cycling every few months so there is always something new to look forward to. Ponder the
+        distant past with artifacts such as judicial records and figurines immortalized in stone
+        and ceramic. Also in the museum’s collection are arms and armament from italian gothic
+        armor to a double barreled wheellock pistol. Finish your visit with a trip to the gift shop
+        and shop for a piece of art history whether that be a Hokusai Great Wave scarf or a Van
+        Gogh’s Monet Sunflowers teapot.</string>
+    <string name="central_park_description">\tTake a tour around central park’s iconic landscape.
+        There are several different tours available that go over the restoration of wooden
+        architecture, an animal sanctuary that has only reopened since 2016, and a tour that
+        introduces the public to bird watching and identification. In addition, there are regular
+        weekly workouts that are free to participate in.</string>
+    <string name="times_square_description">\tOne of the busiest places for a pedestrian is this
+        plaza in middle Manhattan. This is the place to go for entertainment and businesses in this
+        area provide 24 hour service. There is a live event happening every week. Shop designer
+        jewelry, watches, clothing and then take a break eating at one of the many local
+        restaurants.</string>
+    <string name="yankee_stadium_description">\tTake a tour down Yankee Stadium and take in the history of the Yankees through baseball artifacts and memorabilia. With a ticket, take to the seats as a spectator in the stadium of the 27 time World Series champions.</string>
+    <string name="bronx_zoo_description">\tCome on down to the Bronx zoo and see a slice of nature in the city. Visit the greenhouse to see butterflies fluttering all around. Admire the lemurs of Madagascar where they are found nowhere else in the world. Take a look at Nile crocodiles in Crocodile Cave with viewing angles both above and below the waterline.</string>
+    <string name="bronx_botanical_garden_description">\tTake part in various events that take place at the Bronx Botanical Garden every week such as a farmer’s market every Wednesday from August to October. Visit a panel to hear a lecture from important figures in science, horticulture, and garden design. Enjoy live music and drinks in wine and waterlies while enjoying the sights.</string>
+    <string name="hiphop_museum_description">\tVisit the Hip Hop Museum and go back to the Golden Era of hip-hop of 1986-1990. Take a journey through the past with historical artifacts, multimedia, and augmented technologies. Included in the activities is a virtual summer camp for kids ages 9-12 educating the youth on subjects like radio and Internet broadcasting and business management.</string>
+    <string name="corona_park_description">\tVisit one of the most iconic parks in New York. Take a picture at the Unisphere that represents “Peace Through Understanding”. Stroll through historic trails, play a game of soccer or maybe just unwind and bask in the greenery. This park also features an indoor swimming pool for those wanting to take a dip into the water.</string>
+    <string name="luna_park_description">\tEnjoy amusement park thrills at Luna Park which lies just next to the Coney Island beach. It features rollercoasters, a ferris wheel, a log water ride and all types of thrilling fun. When it is time to relax there are several dining options available and live music to accompany it.</string>
+    <string name="prospect_park_description">\tParticipate in a variety of activities in Prospect Park. take part in catch and release fishing, birdwatching, and horseback riding. Play a game of baseball or tennis outside on one of the on site fields. Stay indoors at the LeFrank center and ice skate or even get a game of ice hockey going.</string>
+    <string name="brooklyn_botanic_garden_description">\tWalk through beautiful displays of blooming plants in the Brooklyn Botanic Garden. Popular plants to look out for are large conifer trees, cherry blossoms, orchids and even take a peek at a carnivorous sarracenia pitcher plant.</string>
+    <string name="brooklyn_museum_description">\tLook through the past at the Brooklyn Museum. Exhibits cycle so know where to go ahead of time. Until October 22 Africa Fashion will be on display featuring pieces from the 1950s to current day. Over forty different designers are represented in this exhibit. Browse through the museum’s collection of art around the world. Shop the gift store after the day’s past.</string>
+    <string name="citi_field_description">\tTake yourself out to the ball game or visit a tour off game day. A tour allows access to areas of the park usually restricted to the public including the suite level, the press conference room, and the writing press. Take photos with sports memorabilia of favorite players. Finish the day with a trip to the gift shop.</string>
+    <string name="museum_of_the_moving_image_description">\tTour the past of cinema at the Museum of the Moving Image. This museum features over 5,000 artifacts of the time of silent films. Included would be everything needed to produce and market a silent film in the time period. Also in the collection are glass panels which advertise local businesses at the time. Take a look at licensed merchandise from as far back as 1914.</string>
+    <string name="rockaway_beach_description">"\tSurf up the waves at New York’s only legal surfing beach. Enjoy the time in the sun and dine at the boardwalk or get friends together and play a game of volleyball. "</string>
+    <string name="statue_of_liberty_description">"\tTake a free ferry ride to the Statue of Liberty. Visit the museum and hear about the statue’s history through its design and construction. Climb the many stairs and see outside the statue’s crown to the scenic view below. "</string>
 </resources>

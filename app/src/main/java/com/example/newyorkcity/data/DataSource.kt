@@ -82,8 +82,8 @@ object DataSource {
     val brooklynActivities = listOf(
         LocationModel(
             locationImage = R.drawable.coney_island_2233845_1280,
-            locationName = R.string.coney_island,
-            navigation = NewYorkScreen.ConeyIslandDescription.name
+            locationName = R.string.luna_park,
+            navigation = NewYorkScreen.LunaParkDescription.name
         ),
         LocationModel(
             locationImage = R.drawable.prospect_park,
