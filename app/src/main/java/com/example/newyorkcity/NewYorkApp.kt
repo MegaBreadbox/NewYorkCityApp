@@ -280,8 +280,8 @@ fun NewYorkApp(
                             boroughs = uiState.manhattanActivities,
                             image = uiState.activeLocation.locationImage,
                             textBody = uiState.activeLocation.locationDescription,
+                            viewModel = viewModel,
                             onClick = { },
-                            viewModel = viewModel
                         )
                     }
                 }

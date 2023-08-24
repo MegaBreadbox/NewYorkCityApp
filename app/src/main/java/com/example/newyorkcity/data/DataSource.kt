@@ -9,31 +9,31 @@ object DataSource {
         LocationModel(
             locationImage = R.drawable.manhattan_bridge,
             locationName = R.string.manhattan,
-            locationDescription = R.string.manhattan,
+            locationDescription = R.string.place_holder,
             navigation = NewYorkScreen.ManhattanActivities.name
         ),
         LocationModel(
             locationImage = R.drawable.urban_554606_1280,
             locationName = R.string.the_bronx,
-            locationDescription = R.string.the_bronx,
+            locationDescription = R.string.place_holder,
             navigation = NewYorkScreen.BronxActivities.name
         ),
         LocationModel(
             locationImage = R.drawable.new_york_city_104659_1280,
             locationName = R.string.brooklyn,
-            locationDescription = R.string.brooklyn,
+            locationDescription = R.string.place_holder,
             navigation = NewYorkScreen.BrooklynActivities.name
         ),
         LocationModel(
             locationImage = R.drawable.flushing_4250265_1280,
             locationName = R.string.queens,
-            locationDescription = R.string.queens,
+            locationDescription = R.string.place_holder,
             navigation = NewYorkScreen.QueensActivities.name
         ),
         LocationModel(
             locationImage = R.drawable.new_york_1800020_1280,
             locationName = R.string.staten_island,
-            locationDescription = R.string.staten_island,
+            locationDescription = R.string.place_holder,
             navigation = NewYorkScreen.StatenIslandActivities.name
         )
     )

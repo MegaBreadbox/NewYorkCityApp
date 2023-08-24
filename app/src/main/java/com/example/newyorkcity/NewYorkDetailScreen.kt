@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
@@ -25,17 +26,18 @@ fun DetailScreen(
         modifier
             .verticalScroll(rememberScrollState())
             .fillMaxWidth()
+            .padding(dimensionResource(R.dimen.medium_padding))
     ){
         Image(
             painter = painterResource(image),
             contentDescription = null,
         )
-        Spacer(modifier = modifier.padding(dimensionResource(R.dimen.medium_padding)))
+        Spacer(modifier = Modifier.padding(dimensionResource(R.dimen.large_padding)))
         Text(
             text = textBody,
             lineHeight = 25.sp,
             style = MaterialTheme.typography.bodyLarge,
-            modifier = modifier.padding(dimensionResource(R.dimen.medium_padding))
+
         )
     }
 }

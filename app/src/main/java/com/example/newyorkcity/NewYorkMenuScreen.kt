@@ -61,7 +61,7 @@ fun MediumMenuScreen(
         DetailScreen(
             image = image,
             textBody = stringResource(textBody),
-            modifier = modifier.weight(3F).padding(dimensionResource(R.dimen.medium_padding))
+            modifier = modifier.weight(3F)
         )
     }
 }
