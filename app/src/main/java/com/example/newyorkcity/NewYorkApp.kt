@@ -1,7 +1,6 @@
 package com.example.newyorkcity
 
 import androidx.annotation.StringRes
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -14,7 +13,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -95,7 +93,6 @@ fun NewYorkTopBar(
 @Composable
 fun NewYorkApp(
     windowSize: WindowWidthSizeClass,
-    modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController()
 ) {
     val viewModel: NewYorkViewModel = viewModel()
@@ -278,6 +275,42 @@ fun NewYorkApp(
                     composable(route = NewYorkScreen.ManhattanActivities.name) {
                         MediumMenuScreen(
                             boroughs = uiState.manhattanActivities,
+                            image = uiState.activeLocation.locationImage,
+                            textBody = uiState.activeLocation.locationDescription,
+                            viewModel = viewModel,
+                            onClick = { },
+                        )
+                    }
+                    composable(route = NewYorkScreen.BronxActivities.name) {
+                        MediumMenuScreen(
+                            boroughs = uiState.bronxActivities,
+                            image = uiState.activeLocation.locationImage,
+                            textBody = uiState.activeLocation.locationDescription,
+                            viewModel = viewModel,
+                            onClick = { },
+                        )
+                    }
+                    composable(route = NewYorkScreen.BrooklynActivities.name) {
+                        MediumMenuScreen(
+                            boroughs = uiState.brooklynActivities,
+                            image = uiState.activeLocation.locationImage,
+                            textBody = uiState.activeLocation.locationDescription,
+                            viewModel = viewModel,
+                            onClick = { },
+                        )
+                    }
+                    composable(route = NewYorkScreen.QueensActivities.name) {
+                        MediumMenuScreen(
+                            boroughs = uiState.queensActivities,
+                            image = uiState.activeLocation.locationImage,
+                            textBody = uiState.activeLocation.locationDescription,
+                            viewModel = viewModel,
+                            onClick = { },
+                        )
+                    }
+                    composable(route = NewYorkScreen.StatenIslandActivities.name) {
+                        MediumMenuScreen(
+                            boroughs = uiState.statenIslandActivities,
                             image = uiState.activeLocation.locationImage,
                             textBody = uiState.activeLocation.locationDescription,
                             viewModel = viewModel,

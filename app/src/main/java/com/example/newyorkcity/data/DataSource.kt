@@ -75,13 +75,13 @@ object DataSource {
         LocationModel(
             locationImage = R.drawable.bronxzoo,
             locationName = R.string.bronx_zoo,
-            locationDescription = R.string.bronx_zoo,
+            locationDescription = R.string.bronx_zoo_description,
             navigation = NewYorkScreen.BronxZooDescription.name
         ),
         LocationModel(
             locationImage = R.drawable.bronx_botanical_garden,
             locationName = R.string.bronx_botanical_garden,
-            locationDescription = R.string.bronx_botanical_garden,
+            locationDescription = R.string.bronx_botanical_garden_description,
             navigation = NewYorkScreen.BronxGardenDescription.name
         ),
         LocationModel(

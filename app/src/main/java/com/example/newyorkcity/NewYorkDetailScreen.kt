@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
@@ -23,6 +22,7 @@ fun DetailScreen(
     modifier: Modifier = Modifier
 ){
     Column(
+        modifier =
         modifier
             .verticalScroll(rememberScrollState())
             .fillMaxWidth()
